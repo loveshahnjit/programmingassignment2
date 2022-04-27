@@ -31,5 +31,5 @@
 
 - (1) Pretty straightforward, just need to make sure you have a ec2 instance with docker installed.  
 - (2) Ssh into the Ec2 instance.  
-- (3) $docker pull loveshahnjit/pa2  
-- (3) $docker run -it loveshahnjit/pa2:latest --test_file s3://programmingassignment2/ValidationDataset.csv  
+- (3) $docker pull loveshahnjit/programmingassignment2
+- (3) $docker run -it loveshahnjit/programmingassignment2:latest --test_file s3://programmingassignment2/ValidationDataset.csv  
