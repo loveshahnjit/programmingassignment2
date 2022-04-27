@@ -24,7 +24,7 @@
 - (3) Run one of 2 commands below in the EC2 instance in order to run the model prediction:  
   - (a) If youre using the S3 file:  
 	$spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.7 file_name.py --test_file 
-	s3a://programmingassignment2/ValidationDataset.csv 
+	s3://programmingassignment2/ValidationDataset.csv 
   - (b) If you're using a local file stored in the EC2 instance:  
 	$spark-submit --packages org.apache.hadoop-aws:2.7.7 file_name.py --test_file ValidationDataset.csv     
 
@@ -33,4 +33,4 @@
 - (1) Pretty straightforward, just need to make sure you have a ec2 instance with docker installed.  
 - (2) Ssh into the Ec2 instance.  
 - (3) $docker pull loveshahnjit/programmingassignment2  
-- (3) $docker run -it loveshahnjit/wineapp:latest --test_file s3a://programmingassignment2/ValidationDataset.csv  
+- (3) $docker run -it loveshahnjit/wineapp:latest --test_file s3://programmingassignment2/ValidationDataset.csv  
