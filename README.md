@@ -1,4 +1,4 @@
-The training data, validation data, and trained model data are uploaded to the s3 bucket: 
+The training data, validation data, and trained model data are uploaded to the s3 bucket: s3://programmingassignment2
 
 Steps to run model training on 4 parallel Ec2 instances using EMR on AWS:
 
