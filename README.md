@@ -23,8 +23,7 @@
 - (2) Copy the wine prediction file ('pa2.py') using: $scp -i <"your .pem file"> pa2.py :~/pa2.py)  
 - (3) Run one of 2 commands below in the EC2 instance in order to run the model prediction:  
   - (a) If youre using the S3 file:  
-	$spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.7 pa2.py --test_file 
-	s3://programmingassignment2/ValidationDataset.csv 
+	$spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.7 pa2.py --test_file s3://programmingassignment2/ValidationDataset.csv 
   - (b) If you're using a local file stored in the EC2 instance:  
 	$spark-submit --packages org.apache.hadoop-aws:2.7.7 pa2.py --test_file ValidationDataset.csv     
 
